@@ -18,8 +18,8 @@ MyPhysicsList::MyPhysicsList()
     RegisterPhysics( new G4StoppingPhysics(verb));
 
     // Gamma-Nuclear Physics
-    RegisterPhysics( new GammaNuclearPhysics(“gamma”));
-
+//    RegisterPhysics( new GammaNuclearPhysics(“gamma”));
+// Bu modülün scriptini bulamadım henüz.
     // Decay
     RegisterPhysics( new G4DecayPhysics());
 
