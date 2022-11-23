@@ -73,43 +73,43 @@ CMakeFiles/decay.dir/decay.cc.o: CMakeFiles/decay.dir/flags.make
 CMakeFiles/decay.dir/decay.cc.o: decay.cc
 CMakeFiles/decay.dir/decay.cc.o: CMakeFiles/decay.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/radioactive-decay-sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/decay.dir/decay.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/decay.cc.o -MF CMakeFiles/decay.dir/decay.cc.o.d -o CMakeFiles/decay.dir/decay.cc.o -c /home/taka/radioactive-decay-sim/decay.cc
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/decay.cc.o -MF CMakeFiles/decay.dir/decay.cc.o.d -o CMakeFiles/decay.dir/decay.cc.o -c /home/taka/radioactive-decay-sim/decay.cc
 
 CMakeFiles/decay.dir/decay.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decay.dir/decay.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/decay.cc > CMakeFiles/decay.dir/decay.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/decay.cc > CMakeFiles/decay.dir/decay.cc.i
 
 CMakeFiles/decay.dir/decay.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decay.dir/decay.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/decay.cc -o CMakeFiles/decay.dir/decay.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/decay.cc -o CMakeFiles/decay.dir/decay.cc.s
 
 CMakeFiles/decay.dir/construction.cc.o: CMakeFiles/decay.dir/flags.make
 CMakeFiles/decay.dir/construction.cc.o: construction.cc
 CMakeFiles/decay.dir/construction.cc.o: CMakeFiles/decay.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/radioactive-decay-sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/decay.dir/construction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/construction.cc.o -MF CMakeFiles/decay.dir/construction.cc.o.d -o CMakeFiles/decay.dir/construction.cc.o -c /home/taka/radioactive-decay-sim/construction.cc
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/construction.cc.o -MF CMakeFiles/decay.dir/construction.cc.o.d -o CMakeFiles/decay.dir/construction.cc.o -c /home/taka/radioactive-decay-sim/construction.cc
 
 CMakeFiles/decay.dir/construction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decay.dir/construction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/construction.cc > CMakeFiles/decay.dir/construction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/construction.cc > CMakeFiles/decay.dir/construction.cc.i
 
 CMakeFiles/decay.dir/construction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decay.dir/construction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/construction.cc -o CMakeFiles/decay.dir/construction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/construction.cc -o CMakeFiles/decay.dir/construction.cc.s
 
 CMakeFiles/decay.dir/physics.cc.o: CMakeFiles/decay.dir/flags.make
 CMakeFiles/decay.dir/physics.cc.o: physics.cc
 CMakeFiles/decay.dir/physics.cc.o: CMakeFiles/decay.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/taka/radioactive-decay-sim/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/decay.dir/physics.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/physics.cc.o -MF CMakeFiles/decay.dir/physics.cc.o.d -o CMakeFiles/decay.dir/physics.cc.o -c /home/taka/radioactive-decay-sim/physics.cc
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/decay.dir/physics.cc.o -MF CMakeFiles/decay.dir/physics.cc.o.d -o CMakeFiles/decay.dir/physics.cc.o -c /home/taka/radioactive-decay-sim/physics.cc
 
 CMakeFiles/decay.dir/physics.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decay.dir/physics.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/physics.cc > CMakeFiles/decay.dir/physics.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/taka/radioactive-decay-sim/physics.cc > CMakeFiles/decay.dir/physics.cc.i
 
 CMakeFiles/decay.dir/physics.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decay.dir/physics.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/physics.cc -o CMakeFiles/decay.dir/physics.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/taka/radioactive-decay-sim/physics.cc -o CMakeFiles/decay.dir/physics.cc.s
 
 # Object files for target decay
 decay_OBJECTS = \

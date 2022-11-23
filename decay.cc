@@ -22,6 +22,7 @@ int main(int argc, char** argv)
     visManager->Initialize();
 
     G4UImanager *UImanager = G4UImanager::GetUIpointer();
+    UImanager->ApplyCommand("/vis/open OGL");
     ui->SessionStart();
 
     return 0;
