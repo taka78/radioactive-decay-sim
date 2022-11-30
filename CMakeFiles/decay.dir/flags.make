@@ -4,7 +4,7 @@
 # compile CXX with /bin/g++
 CXX_DEFINES = -DG4LIB_BUILD_DLL -DG4UI_USE_TCSH
 
-CXX_INCLUDES = -isystem /home/taka/geant4-v11.0.3-install/include/Geant4
+CXX_INCLUDES = -I/lib/x86_64-linux-gnu -isystem /home/taka/geant4-v11.0.3-install/include/Geant4
 
-CXX_FLAGS =  -pthread -ftls-model=initial-exec -std=c++17 
+CXX_FLAGS = -lstdc++
 

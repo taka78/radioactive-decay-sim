@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/decay.dir/construction.cc.o.d"
   "CMakeFiles/decay.dir/decay.cc.o"
   "CMakeFiles/decay.dir/decay.cc.o.d"
+  "CMakeFiles/decay.dir/generator.cc.o"
+  "CMakeFiles/decay.dir/generator.cc.o.d"
   "CMakeFiles/decay.dir/physics.cc.o"
   "CMakeFiles/decay.dir/physics.cc.o.d"
   "decay"

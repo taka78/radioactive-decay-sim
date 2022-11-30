@@ -190,6 +190,30 @@ decay.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/decay.dir/build.make CMakeFiles/decay.dir/decay.cc.s
 .PHONY : decay.cc.s
 
+generator.o: generator.cc.o
+.PHONY : generator.o
+
+# target to build an object file
+generator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decay.dir/build.make CMakeFiles/decay.dir/generator.cc.o
+.PHONY : generator.cc.o
+
+generator.i: generator.cc.i
+.PHONY : generator.i
+
+# target to preprocess a source file
+generator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decay.dir/build.make CMakeFiles/decay.dir/generator.cc.i
+.PHONY : generator.cc.i
+
+generator.s: generator.cc.s
+.PHONY : generator.s
+
+# target to generate assembly for a file
+generator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decay.dir/build.make CMakeFiles/decay.dir/generator.cc.s
+.PHONY : generator.cc.s
+
 physics.o: physics.cc.o
 .PHONY : physics.o
 
@@ -230,6 +254,9 @@ help:
 	@echo "... decay.o"
 	@echo "... decay.i"
 	@echo "... decay.s"
+	@echo "... generator.o"
+	@echo "... generator.i"
+	@echo "... generator.s"
 	@echo "... physics.o"
 	@echo "... physics.i"
 	@echo "... physics.s"

@@ -17,4 +17,6 @@ MyPhysicsList::MyPhysicsList()
     // Radioactive decay with gamma rays turned on
     RegisterPhysics (new G4RadioactiveDecayPhysics());
 
-};
+}
+MyPhysicsList::~MyPhysicsList()
+{}
