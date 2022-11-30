@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/taka/radioactive-decay-sim/build",
+  "command": "/bin/g++ -DG4LIB_BUILD_DLL -DG4UI_USE_TCSH -I/lib/x86_64-linux-gnu -isystem /home/taka/geant4-v11.0.3-install/include/Geant4 -lstdc++  -g -o CMakeFiles/decay.dir/decay.cc.o -c /home/taka/radioactive-decay-sim/decay.cc",
+  "file": "/home/taka/radioactive-decay-sim/decay.cc"
+},
+{
+  "directory": "/home/taka/radioactive-decay-sim/build",
+  "command": "/bin/g++ -DG4LIB_BUILD_DLL -DG4UI_USE_TCSH -I/lib/x86_64-linux-gnu -isystem /home/taka/geant4-v11.0.3-install/include/Geant4 -lstdc++  -g -o CMakeFiles/decay.dir/construction.cc.o -c /home/taka/radioactive-decay-sim/construction.cc",
+  "file": "/home/taka/radioactive-decay-sim/construction.cc"
+},
+{
+  "directory": "/home/taka/radioactive-decay-sim/build",
+  "command": "/bin/g++ -DG4LIB_BUILD_DLL -DG4UI_USE_TCSH -I/lib/x86_64-linux-gnu -isystem /home/taka/geant4-v11.0.3-install/include/Geant4 -lstdc++  -g -o CMakeFiles/decay.dir/generator.cc.o -c /home/taka/radioactive-decay-sim/generator.cc",
+  "file": "/home/taka/radioactive-decay-sim/generator.cc"
+},
+{
+  "directory": "/home/taka/radioactive-decay-sim/build",
+  "command": "/bin/g++ -DG4LIB_BUILD_DLL -DG4UI_USE_TCSH -I/lib/x86_64-linux-gnu -isystem /home/taka/geant4-v11.0.3-install/include/Geant4 -lstdc++  -g -o CMakeFiles/decay.dir/physics.cc.o -c /home/taka/radioactive-decay-sim/physics.cc",
+  "file": "/home/taka/radioactive-decay-sim/physics.cc"
+}
+]

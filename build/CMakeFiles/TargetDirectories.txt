@@ -1,0 +1,4 @@
+/home/taka/radioactive-decay-sim/build/CMakeFiles/decay.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/radioactivedecay.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/edit_cache.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/rebuild_cache.dir
