@@ -1,4 +1,4 @@
-/home/taka/mustafa/build/CMakeFiles/sim.dir
-/home/taka/mustafa/build/CMakeFiles/Simulation.dir
-/home/taka/mustafa/build/CMakeFiles/edit_cache.dir
-/home/taka/mustafa/build/CMakeFiles/rebuild_cache.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/sim.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/Simulation.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/edit_cache.dir
+/home/taka/radioactive-decay-sim/build/CMakeFiles/rebuild_cache.dir

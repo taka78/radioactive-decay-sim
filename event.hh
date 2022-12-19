@@ -4,7 +4,7 @@
 #include "G4UserEventAction.hh"
 #include "G4Event.hh"
 
-#include "G4GenericAnalysisManager.hh"
+#include "g4root.hh"
 
 #include "run.hh"
 

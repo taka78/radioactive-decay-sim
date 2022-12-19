@@ -27,8 +27,8 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 
     if(particle == G4ChargedGeantino::ChargedGeantino())
     {
-        G4int Z = 27;
-        G4int A = 60;
+        G4int Z = 55;
+        G4int A = 82;
 
         G4double charge   = 0.*eplus;
         G4double energy = 0.*keV;

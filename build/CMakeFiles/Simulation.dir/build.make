@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/taka/mustafa
+CMAKE_SOURCE_DIR = /home/taka/radioactive-decay-sim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/taka/mustafa/build
+CMAKE_BINARY_DIR = /home/taka/radioactive-decay-sim/build
 
 # Utility rule file for Simulation.
 
@@ -81,6 +81,6 @@ CMakeFiles/Simulation.dir/clean:
 .PHONY : CMakeFiles/Simulation.dir/clean
 
 CMakeFiles/Simulation.dir/depend:
-	cd /home/taka/mustafa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/taka/mustafa /home/taka/mustafa /home/taka/mustafa/build /home/taka/mustafa/build /home/taka/mustafa/build/CMakeFiles/Simulation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/taka/radioactive-decay-sim/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/taka/radioactive-decay-sim /home/taka/radioactive-decay-sim /home/taka/radioactive-decay-sim/build /home/taka/radioactive-decay-sim/build /home/taka/radioactive-decay-sim/build/CMakeFiles/Simulation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Simulation.dir/depend
 

@@ -2,7 +2,7 @@
 
 MySensitiveDetector::MySensitiveDetector(G4String name) : G4VSensitiveDetector(name)
 {
-    quEff = new G4PhysicsFreeVector();
+    quEff = new G4PhysicsOrderedFreeVector();
 
     std::ifstream datafile;
     datafile.open("eff.dat");
@@ -18,7 +18,7 @@ MySensitiveDetector::MySensitiveDetector(G4String name) : G4VSensitiveDetector(n
 
         G4cout << wlen << " " << queff << std::endl;
 
-//        quEff->PutValue(wlen, queff/100.,queff/100.);
+        quEff->InsertValues(wlen, queff/100.);
     }
 
     datafile.close();
@@ -63,7 +63,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 
     G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
 
-    G4GenericAnalysisManager *man = G4GenericAnalysisManager::Instance();
+    G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     man->FillNtupleIColumn(0, 0, evt);
     man->FillNtupleDColumn(0, 1, posPhoton[0]);

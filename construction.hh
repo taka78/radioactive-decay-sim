@@ -37,8 +37,8 @@ private:
 
     G4OpticalSurface *mirrorSurface;
 
-    G4Material *SiO2, *H2O, *Aerogel, *worldMat, *NaI, *Air[10];
-    G4Element *C, *Na, *I;
+    G4Material *Lead, *SiO2, *H2O, *Aerogel, *worldMat, *NaI, *Air[10];
+    G4Element *Pb, *C, *Na, *I;
 
     void DefineMaterials();
     virtual void ConstructSDandField();

@@ -37,6 +37,9 @@ void MyDetectorConstruction::DefineMaterials()
     Aerogel = new G4Material("Aerogel", 0.200*g/cm3, 3);
     worldMat = nist->FindOrBuildMaterial("G4_AIR");
     H2O = new G4Material("H2O", 1.000*g/cm3, 2);
+    Lead = new G4Material("Lead", 11.34*g/cm3, 1);
+
+    Pb = nist->FindOrBuildElement("Pb");
 
     SiO2->AddElement(nist->FindOrBuildElement("Si"), 1);
     SiO2->AddElement(nist->FindOrBuildElement("O"), 2);
@@ -50,10 +53,13 @@ void MyDetectorConstruction::DefineMaterials()
 
     G4double energy[2] = {1.239841939*eV/0.2, 1.239841939*eV/0.9};
     G4double rindexAerogel[2] = {1.1, 1.1};
+    G4double rindexLead[2] = {0.87, 0.87};
     G4double rindexWorld[2] = {1.0, 1.0};
     G4double rindexNaI[2] = {1.78, 1.78};
 
     G4MaterialPropertiesTable *mptAerogel = new G4MaterialPropertiesTable();
+
+    mptAerogel->AddProperty("RINDEX", energy, rindexLead, 2);
     mptAerogel->AddProperty("RINDEX", energy, rindexAerogel, 2);
 
     Aerogel->SetMaterialPropertiesTable(mptAerogel);
@@ -151,29 +157,6 @@ void MyDetectorConstruction::ConstructScintillator()
     }
 }
 
-void MyDetectorConstruction::ConstructCherenkov()
-{
-    solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, 0.01*m);
-
-    logicRadiator = new G4LogicalVolume(solidRadiator, Aerogel, "logicalRadiator");
-
-    fScoringVolume = logicRadiator;
-
-    physRadiator = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.25*m), logicRadiator, "physRadiator", logicWorld, false, 0, true);
-
-    solidDetector = new G4Box("solidDetector", xWorld/nRows, xWorld/nCols, 0.01*m);
-
-    logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
-
-    for(G4int i = 0; i < nRows; i++)
-    {
-        for(G4int j = 0; j < nCols; j++)
-        {
-            physDetector = new G4PVPlacement(0, G4ThreeVector(-0.5*m+(i+0.5)*m/nRows, -0.5*m+(j+0.5)*m/nCols, 0.49*m), logicDetector, "physDetector", logicWorld, false, j+i*nCols, true);
-        }
-    }
-}
-
 void MyDetectorConstruction::ConstructTOF()
 {
     solidDetector = new G4Box("solidDetector", 1.*m, 1.*m, 0.1*m);
@@ -205,8 +188,25 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
     physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true);
 
-    if(isCherenkov)
-        ConstructCherenkov();
+        solidRadiator = new G4Box("solidRadiator", 0.4*m, 0.4*m, 0.01*m);
+
+    logicRadiator = new G4LogicalVolume(solidRadiator, Lead, "logicalRadiator");
+
+    fScoringVolume = logicRadiator;
+
+    physRadiator = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.25*m), logicRadiator, "physRadiator", logicWorld, false, 0, true);
+
+    solidDetector = new G4Box("solidDetector", 0.01*m, 0.01*m, 0.01*m);
+
+    logicDetector = new G4LogicalVolume(solidDetector, worldMat, "logicDetector");
+
+    for(G4int i = 0; i < nRows; i++)
+    {
+        for(G4int j = 0; j < nCols; j++)
+        {
+            physDetector = new G4PVPlacement(0, G4ThreeVector(-0.5*m+(i+0.5)*m/nRows, -0.5*m+(j+0.5)*m/nCols, 0.49*m), logicDetector, "physDetector", logicWorld, false, j+i*nCols, true);
+        }
+    }
 
     if(isScintillator)
         ConstructScintillator();

@@ -2,7 +2,7 @@
 
 MyRunAction::MyRunAction()
 {
-    G4GenericAnalysisManager *man = G4GenericAnalysisManager::Instance();
+    G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     man->CreateNtuple("Photons", "Photons");
     man->CreateNtupleIColumn("fEvent");
@@ -30,7 +30,7 @@ MyRunAction::~MyRunAction()
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
-    G4GenericAnalysisManager *man = G4GenericAnalysisManager::Instance();
+    G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     G4int runID = run->GetRunID();
 
@@ -42,7 +42,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 
 void MyRunAction::EndOfRunAction(const G4Run*)
 {
-    G4GenericAnalysisManager *man = G4GenericAnalysisManager::Instance();
+    G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     man->Write();
     man->CloseFile();
